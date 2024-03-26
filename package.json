@@ -7,13 +7,8 @@
   "scripts": {
     "test": "playwright test",
     "test-cucumber": "cucumber-js test",
-    "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js",
-    "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js",
-    "test:bs:safari": "wdio run conf/wdio.conf.browserstack.safari.js",
-    "test:bs:ios": "wdio run conf/wdio.conf.browserstack.ios.safari.js",
     "allure-report": "allure generate allure-results --clean && allure open",
-    "html-report": "playwright show-report",
-    "test:visual": "wdio run conf/wdio.conf.visualregression.js"
+    "html-report": "playwright show-report"
   },
   "license": "ISC",
   "devDependencies": {
