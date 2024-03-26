@@ -1,17 +1,26 @@
 {
-  "name": "january",
+  "name": "checknotes",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "Chandra C",
+  "description": "Boilerplate Playwright code - plug n play",
+  "author": "Chandrashekhar Ch",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js",
+    "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js",
+    "test:bs:safari": "wdio run conf/wdio.conf.browserstack.safari.js",
+    "test:bs:ios": "wdio run conf/wdio.conf.browserstack.ios.safari.js",
+    "allure-report": "allure generate allure-results --clean && allure open",
+    "html-report": "playwright show-report",
+    "test:visual": "wdio run conf/wdio.conf.visualregression.js"
+  },
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.6"
   },
   "dependencies": {
+    "allure-commandline": "^2.27.0",
     "dotenv": "^16.3.1",
     "path": "^0.12.7"
   }

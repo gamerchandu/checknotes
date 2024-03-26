@@ -6,7 +6,7 @@ import path from 'path';
  * https://github.com/motdotla/dotenv
  */
 
-require('dotenv').config();
+import {} from 'dotenv/config' 
 
 dotenv.config({path: path.resolve('./my.env') });
 /**

@@ -1,7 +1,13 @@
-install dependencies
+## Playwright Boilerplate code
 
-` npm i`
+### Install dependencies
 
-run tests
+`yarn install`
 
-  ` npx playwright install ` 
+### Run UI Tests
+
+`yarn run test` 
+
+### Generate Reports
+
+`yarn run html-report`
