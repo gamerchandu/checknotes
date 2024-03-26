@@ -27,8 +27,9 @@ yarn install
 ├── /                                         # root directory with project-wide configs and folders
 ├── /playwright.config.ts                        # Configurations related to framework & browser 
 ├── /tests                                       # Tests folder
-├── /pageObjects/                                # Page objects folder
-├── /stepDefinitions/                            # Step Definitions folder
+├── /tests/features/                             # Features folder
+├── /tests/steps/                                # Step Definitions folder
+├── /tests/pageObjects/                          # Page objects folder
 ├── /package.json                                # Framework dependencies
 ```
 
