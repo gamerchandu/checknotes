@@ -1,19 +1,16 @@
 import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-import path from 'path';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
 
-import {} from 'dotenv/config' 
+import {} from 'dotenv/config' ;
 
-dotenv.config({path: path.resolve('./my.env') });
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests-examples',
+  testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
