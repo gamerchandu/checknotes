@@ -27,8 +27,6 @@ yarn install
 ├── /                                         # root directory with project-wide configs and folders
 ├── /playwright.config.ts                        # Configurations related to framework & browser 
 ├── /tests                                       # Tests folder
-├── /tests/features/                             # Features folder
-├── /tests/steps/                                # Step Definitions folder
 ├── /tests/pageObjects/                          # Page objects folder
 ├── /package.json                                # Framework dependencies
 ```
@@ -38,10 +36,7 @@ yarn install
 In order to run the end-to-end playwright tests locally follow these steps:
 
 ```bash 
-Chrome browser                          yarn run test:chrome   
-Firefox browser                         yarn run test:firefox  
-BrowserStack Web Safari browser         yarn run test:bs:safari  
-BrowserStack Mobile Iphone browser      yarn run test:bs:ios  
+Chrome browser                          yarn run test
 ```
 
 ### Visual Tests
