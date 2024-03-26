@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "playwright test",
+    "test-cucumber": "cucumber-js test",
     "test:chrome": "wdio run conf/wdio.conf.desktop.local.chrome.js",
     "test:firefox": "wdio run conf/wdio.conf.desktop.local.firefox.js",
     "test:bs:safari": "wdio run conf/wdio.conf.browserstack.safari.js",
@@ -20,6 +21,7 @@
     "@types/node": "^20.10.6"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
     "allure-commandline": "^2.27.0",
     "dotenv": "^16.3.1",
     "path": "^0.12.7"
